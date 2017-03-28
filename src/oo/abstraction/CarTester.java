@@ -10,7 +10,7 @@ public class CarTester {
 		
 		Car c2 = new Car("HONDA", 2000, "ACCORD", "");
 		Car c3 = new Car("TOYOTA", 2000, "WISH", "");
-		int[] n = new int[5];
+		int[] n = new int[5];  //n只活在main方法大括號裡面
 		System.out.println(n[2]);  //自動給定初始值0
 		
 		Car[] cars = new Car[3];
