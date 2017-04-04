@@ -21,12 +21,13 @@ public class Tester {
 		a.set(2, "885");
 		System.out.println(a);
 		String data = (String)a.get(0);
+		System.out.println(data);
+		System.out.println(a.get(1));
 //		int n = (int)a.get(4);
 		
 		/*本次開獎號為331 821 886 554
 		讓使用者輸入發票號碼(長度不限)判斷尾數3位是否中獎  類別Invoice */
 		
-		System.out.println("本次開獎號為:" + a);
 	}
 	
 
