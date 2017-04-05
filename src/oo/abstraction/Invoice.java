@@ -17,7 +17,7 @@ public class Invoice {
 		String s = scanner.nextLine();
 		s = s.substring(s.length()-3);
 		int i = Integer.parseInt(s);
-		System.out.println(s);
+		System.out.println("尾數3碼:"+s);
 		if(i==a.get(0) ||  i==a.get(1) || i==a.get(2) || i==a.get(3)){
 			System.out.println("恭喜您中獎了！");
 		}else{
