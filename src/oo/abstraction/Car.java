@@ -9,6 +9,10 @@ public class Car {  //能見度：public(就算不同pakage也可以使用
 	int id;
 	float milage;
 	
+	public Car(String brand, String name){
+		this(brand, 0, "", "");
+	}
+	
 	public Car(String brand, int cc, String name, String type){ //brand,cc,name,type是區域變數local variable
 		this.brand = brand;
 		this.cc = cc;
