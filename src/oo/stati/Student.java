@@ -1,10 +1,13 @@
 package oo.stati;
 
-public class Student {
+public class Student {  //如果把public刪掉 在其他package中無法import此類別的任何東西
 	int english;
 	int math;
 	int chinese;
 	static int pass = 60;  //加上static pass就變成類別變數
+	public Student(){
+		
+	}
 	static{
 		System.out.println("Static!");  //static在沒有物件的情況下也會最先執行
 //		System.out.println(english);(錯誤)  因為static在執行完後才跑出english物件
