@@ -8,4 +8,9 @@ public class GraduateStudent extends Student{
 		this.math = math;
 		this.chinese = chinese;
 	}
+	@Override  //幫助檢查複寫是否有誤
+	public void print(){
+		System.out.println(getScore(english)+"\t"+getScore(math)+"\t"+getScore(chinese)+"\t"+thesis);
+		//getScore前面改成protected才能讓這個子類別使用
+	}
 }

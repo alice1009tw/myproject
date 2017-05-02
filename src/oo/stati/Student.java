@@ -23,7 +23,7 @@ public class Student {  //如果把public刪掉 在其他package中無法import�
 		System.out.println(getScore(english)+"\t"+getScore(math)+"\t"+getScore(chinese));
 	}
 	
-	private String getScore(int score){
+	protected String getScore(int score){
 		if(score<pass){
 			return String.valueOf(score+"*");
 		}else{

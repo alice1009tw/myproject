@@ -9,6 +9,10 @@ public class Car {  //能見度：public(就算不同pakage也可以使用
 	int id;
 	float milage;
 	
+	public Car(){
+		
+	}
+	
 	public Car(String brand, String name){
 		this(brand, 0, "", "");
 	}
