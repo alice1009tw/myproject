@@ -40,4 +40,8 @@ public class Car {  //能見度：public(就算不同pakage也可以使用
 	public void maintain(){
 		status = 5;
 	}
+	
+	public void print(){
+		System.out.println(brand+"\t"+cc+"\t"+name+"\t"+type);
+	}
 }

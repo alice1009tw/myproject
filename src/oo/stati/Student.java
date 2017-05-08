@@ -23,7 +23,7 @@ public class Student {  //如果把public刪掉 在其他package中無法import�
 		System.out.println(getScore(english)+"\t"+getScore(math)+"\t"+getScore(chinese));
 	}
 	
-	protected String getScore(int score){
+	protected String getScore(int score){  //protected才能讓GraduateStudent這個子類別使用
 		if(score<pass){
 			return String.valueOf(score+"*");
 		}else{
