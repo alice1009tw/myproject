@@ -5,7 +5,8 @@ public class Customer {
 	int discount;
 	int bonus;
 	
-	public void money(int price){
-		System.out.println("金額："+price+"元"+"\t");
+	public int money(int price){
+//		System.out.print("金額："+price+"\t");
+		return price;
 	}
 }
