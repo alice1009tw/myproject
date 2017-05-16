@@ -1,12 +1,15 @@
 package oo.shopping;
 
 public class SilverCustomer extends Customer{
+	float discount = 0.9f;
 	
-	public int discount(int price){
-		discount = (int) (price*0.9);
-//		this.price = discount;
-		return discount;
-//		System.out.println("折扣後："+this.price);
+	public SilverCustomer(int price){
+		super(price);
+	}
+	
+	@Override
+	public void print(){
+		System.out.println(price+"\t"+price*discount+"\t0");
 	}
 	
 }

@@ -1,18 +1,36 @@
 package oo.shopping;
 
+import java.util.ArrayList;
+
 public class Tester {
 
 	public static void main(String[] args) {
-		Customer c = new Customer();
-		SilverCustomer s = new SilverCustomer();
-		GoldenCustomer g = new GoldenCustomer();
-		System.out.println("金額"+"\t"+"折扣後"+"\t"+"回饋金");
-		System.out.println(c.money(6000));
-		System.out.println(c.money(8000)+"\t"+s.discount(8000));
-		System.out.println(c.money(10000)+"\t"+s.discount(10000));
-		System.out.println(c.money(30000)+"\t"+s.discount(30000)+"\t"+g.bonus(30000));
-		System.out.println(c.money(2000));
-		System.out.println(c.money(10000)+"\t"+s.discount(10000)+"\t"+g.bonus(10000));
+		ArrayList<Customer> list = new ArrayList<>();
+		list.add(new Customer(6000));
+		list.add(new SilverCustomer(8000));
+		list.add(new SilverCustomer(10000));
+		list.add(new GoldenCustomer(30000));
+		list.add(new Customer(2000));
+		list.add(new GoldenCustomer(10000));
+		System.out.println("金額"+"\t折扣後"+"\t回饋金");
+		for(Customer cust : list){
+			if(cust instanceof SilverCustomer && !(cust instanceof GoldenCustomer)){
+				System.out.print("*");
+				SilverCustomer silver = (SilverCustomer)cust;
+			}
+			cust.print();
+		}
+		
+		String[] array = {"aa","bb","cc"};
+		// for each 迴圈
+		for(String s : array){
+			System.out.println(s);
+		}
+		// for i(index) 迴圈
+		for(int i = 0; i < array.length; i++){
+			String s = array[i];
+			System.out.println(s);
+		}
 	}
 
 }

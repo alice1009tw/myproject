@@ -1,10 +1,14 @@
 package oo.shopping;
 
-public class GoldenCustomer extends Customer{
+public class GoldenCustomer extends SilverCustomer{
+	float bonusrate = 0.05f;
 	
-	public int bonus(int price){
-		bonus = (int) (price*0.05);
-		return bonus;
-//		System.out.println("獲得5%回饋金："+bonus);
+	public GoldenCustomer(int price){
+		super(price);
+	}
+	
+	@Override
+	public void print(){
+		System.out.println(price+"\t"+price*discount+"\t"+price*bonusrate);
 	}
 }
