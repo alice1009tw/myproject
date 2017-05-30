@@ -14,7 +14,7 @@ public class SumScores {
 			try {
 				int score = Integer.parseInt(data);
 				sum = sum + score;
-			} catch (NumberFormatException e) {  //()內放錯誤類型的名稱+命名
+			} catch (NumberFormatException e) {  //()內放錯誤類型的名稱+命名e
 				System.out.println("來亂的");
 				i--;
 			}
