@@ -1,6 +1,8 @@
 package oo.shopping2;
 
-public class NormalCustomer {
+public abstract class  NormalCustomer {
 	int price;
 	
+	public abstract void Customer(int price);
+	public abstract void print();
 }
