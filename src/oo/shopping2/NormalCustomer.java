@@ -1,9 +1,12 @@
 package oo.shopping2;
 
-public abstract class  NormalCustomer {
-	int price;
-	
-	
-	public abstract void Customer(int price);
-	public abstract void print();
+public class NormalCustomer extends Customer {
+	public NormalCustomer(int price) {
+		super(price);
+		this.price = price;
+	}
+	@Override
+	public void print() {
+		System.out.println(price + "\t" + price + "\t0");
+	}
 }
