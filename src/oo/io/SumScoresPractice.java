@@ -10,6 +10,7 @@ public class SumScoresPractice {
 		for (int i = 0; i < 3; i++) {
 			System.out.println("請輸入數字:");
 			String s = scanner.nextLine();
+			
 			try{
 				int num = Integer.parseInt(s);
 				n = n + num;
@@ -17,6 +18,7 @@ public class SumScoresPractice {
 				System.out.println("Error");
 				i--;
 			}
+			
 		}
 		System.out.println(n);
 	}

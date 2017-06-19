@@ -7,7 +7,7 @@ public class PhoneMember extends Member{
 		super(name);
 	}
 	public PhoneMember(){
-		super();
+//		super();
 	}
 	public String getPhone(){
 		return phone;

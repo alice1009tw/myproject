@@ -17,7 +17,7 @@ public class Student { // 如果把public刪掉 在其他package中無法import�
 	}
 
 	public Student(int english, int math, int chinese) {
-		super();
+//		super();
 		this.english = english;
 		this.math = math;
 		this.chinese = chinese;

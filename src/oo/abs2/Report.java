@@ -5,6 +5,6 @@ public abstract class Report {
 	public void test(){
 		
 	}
-	
-	public abstract void print();  //移除方法的body才可以
+	public abstract void print();
+	//移除方法的body才可以
 }
